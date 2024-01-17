@@ -1,0 +1,23 @@
+@page "/"
+@layout PublicLayout
+
+<MudContainer Class="d-flex flex-column" MaxWidth="MaxWidth.Medium">
+    <MudPaper Class="mb-5" Style="padding: 20px">
+        <MudText Align="Align.Center" Typo="Typo.h3">Blazor Boilerplate</MudText>
+        <MudText Align="Align.Center" Typo="Typo.body2">Authored by Wreit</MudText>
+    </MudPaper>
+
+    <MudPaper Class="mb-5" Style="padding: 20px">
+        <MudText Align="Align.Center" Typo="Typo.h5">After initial load, reload page.</MudText>
+        @if (OperatingSystem.IsBrowser())
+        {
+            <MudText Align="Align.Center" Typo="Typo.h3">Render mode: WASM</MudText>
+        }
+        else
+        {
+            <MudText Align="Align.Center" Typo="Typo.h3">Render mode: Server</MudText>
+        }
+    </MudPaper>
+    
+    <MudText Align="Align.Center" Typo="Typo.body2">Server is caching wasm part on background, so if you access page next time, it will be just ordinary client WASM application.</MudText>
+</MudContainer>

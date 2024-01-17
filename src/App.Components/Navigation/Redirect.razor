@@ -1,0 +1,11 @@
+@inject NavigationManager NavigationManager
+
+@code {
+    [Parameter]
+    public string? To { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (To != null) NavigationManager.NavigateTo(To);
+    }
+}

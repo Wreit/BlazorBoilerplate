@@ -1,0 +1,15 @@
+{
+  "SourceFolder": "Styles",
+  "TargetFolder": "wwwroot/css",
+  "Arguments": "--style=compressed",
+  "GenerateScopedCss": true,
+  "ScopedCssFolders": ["Pages", "Navigation", "Layouts", "Views", "Components", "Shared"],
+  "IncludePaths": [],
+
+  // You can override specific options based on the build configuration
+  "Configurations": {
+    "Debug": { // These options apply only to Debug builds
+      "Arguments": "--style=expanded"
+    }
+  }
+}
