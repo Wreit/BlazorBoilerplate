@@ -1,3 +1,5 @@
+# BlazorBoilerplate - RenderMode Auto
+
 ***Note** The current master branch is now fixed and working with net8.0
 
 Blazor is a web framework designed to run in the browser on a WebAssembly-based .NET runtime.
